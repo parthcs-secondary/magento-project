@@ -1,0 +1,17 @@
+FROM php:8.2-fpm-alpine
+
+# Install system dependencies and Linux headers
+RUN apk add --no-cache \
+    libpng-dev libjpeg-turbo-dev freetype-dev \
+    icu-dev libxml2-dev libxslt-dev libzip-dev \
+    linux-headers \
+    zip unzip git
+
+# Install PHP extensions
+RUN docker-php-ext-configure gd --with-freetype --with-jpeg \
+    && docker-php-ext-install -j$(nproc) \
+    bcmath gd intl soap xsl zip pdo_mysql sockets
+COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
+# Optimize PHP-FPM for low-memory environment
+RUN echo "pm = static" >> /usr/local/etc/php-fpm.d/zz-docker.conf && \
+    echo "pm.max_children = 5" >> /usr/local/etc/php-fpm.d/zz-docker.conf

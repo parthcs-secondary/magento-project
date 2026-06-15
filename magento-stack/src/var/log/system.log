@@ -1,0 +1,238 @@
+[2026-06-07T07:56:24.490163+00:00] main.INFO: Source table payment_services_order_status_data_production_submitted_hash does not exist. Skipping data migration... [] []
+[2026-06-07T07:56:43.484350+00:00] main.ERROR: Could not validate a connection to the OpenSearch. No alive nodes found in your cluster
+#0 /var/www/html/setup/src/Magento/Setup/Model/SearchConfig.php(69): Magento\Setup\Model\SearchConfig->validateSearchEngine()
+#1 /var/www/html/setup/src/Magento/Setup/Model/Installer.php(1261): Magento\Setup\Model\SearchConfig->saveConfiguration(Array)
+#2 [internal function]: Magento\Setup\Model\Installer->installSearchConfiguration(Array)
+#3 /var/www/html/setup/src/Magento/Setup/Model/Installer.php(422): call_user_func_array(Array, Array)
+#4 /var/www/html/setup/src/Magento/Setup/Console/Command/InstallCommand.php(239): Magento\Setup\Model\Installer->install(Array)
+#5 /var/www/html/vendor/symfony/console/Command/Command.php(341): Magento\Setup\Console\Command\InstallCommand->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#6 /var/www/html/vendor/symfony/console/Application.php(1094): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#7 /var/www/html/vendor/symfony/console/Application.php(356): Symfony\Component\Console\Application->doRunCommand(Object(Magento\Setup\Console\Command\InstallCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#8 /var/www/html/vendor/magento/framework/Console/Cli.php(137): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#9 /var/www/html/vendor/symfony/console/Application.php(195): Magento\Framework\Console\Cli->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#10 /var/www/html/bin/magento(23): Symfony\Component\Console\Application->run()
+#11 {main} [] []
+[2026-06-07T07:59:31.225507+00:00] main.INFO: Source table payment_services_order_status_data_production_submitted_hash does not exist. Skipping data migration... [] []
+[2026-06-07T07:59:49.872540+00:00] main.ERROR: Search engine 'mysql' is not an available search engine.
+#0 /var/www/html/setup/src/Magento/Setup/Model/SearchConfig.php(62): Magento\Setup\Model\SearchConfig->validateSearchEngineSelection(Array)
+#1 /var/www/html/setup/src/Magento/Setup/Model/Installer.php(1261): Magento\Setup\Model\SearchConfig->saveConfiguration(Array)
+#2 [internal function]: Magento\Setup\Model\Installer->installSearchConfiguration(Array)
+#3 /var/www/html/setup/src/Magento/Setup/Model/Installer.php(422): call_user_func_array(Array, Array)
+#4 /var/www/html/setup/src/Magento/Setup/Console/Command/InstallCommand.php(239): Magento\Setup\Model\Installer->install(Array)
+#5 /var/www/html/vendor/symfony/console/Command/Command.php(341): Magento\Setup\Console\Command\InstallCommand->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#6 /var/www/html/vendor/symfony/console/Application.php(1094): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#7 /var/www/html/vendor/symfony/console/Application.php(356): Symfony\Component\Console\Application->doRunCommand(Object(Magento\Setup\Console\Command\InstallCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#8 /var/www/html/vendor/magento/framework/Console/Cli.php(137): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#9 /var/www/html/vendor/symfony/console/Application.php(195): Magento\Framework\Console\Cli->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#10 /var/www/html/bin/magento(23): Symfony\Component\Console\Application->run()
+#11 {main} [] []
+[2026-06-07T08:04:30.776669+00:00] main.INFO: Source table payment_services_order_status_data_production_submitted_hash does not exist. Skipping data migration... [] []
+[2026-06-07T08:04:50.063813+00:00] main.ERROR: Search engine 'elasticsearch7' is not an available search engine.
+#0 /var/www/html/setup/src/Magento/Setup/Model/SearchConfig.php(62): Magento\Setup\Model\SearchConfig->validateSearchEngineSelection(Array)
+#1 /var/www/html/setup/src/Magento/Setup/Model/Installer.php(1261): Magento\Setup\Model\SearchConfig->saveConfiguration(Array)
+#2 [internal function]: Magento\Setup\Model\Installer->installSearchConfiguration(Array)
+#3 /var/www/html/setup/src/Magento/Setup/Model/Installer.php(422): call_user_func_array(Array, Array)
+#4 /var/www/html/setup/src/Magento/Setup/Console/Command/InstallCommand.php(239): Magento\Setup\Model\Installer->install(Array)
+#5 /var/www/html/vendor/symfony/console/Command/Command.php(341): Magento\Setup\Console\Command\InstallCommand->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#6 /var/www/html/vendor/symfony/console/Application.php(1094): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#7 /var/www/html/vendor/symfony/console/Application.php(356): Symfony\Component\Console\Application->doRunCommand(Object(Magento\Setup\Console\Command\InstallCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#8 /var/www/html/vendor/magento/framework/Console/Cli.php(137): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#9 /var/www/html/vendor/symfony/console/Application.php(195): Magento\Framework\Console\Cli->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#10 /var/www/html/bin/magento(23): Symfony\Component\Console\Application->run()
+#11 {main} [] []
+[2026-06-07T08:41:17.865176+00:00] main.INFO: Source table payment_services_order_status_data_production_submitted_hash does not exist. Skipping data migration... [] []
+[2026-06-07T08:41:36.504027+00:00] main.ERROR: Could not validate a connection to the OpenSearch. No alive nodes found in your cluster
+#0 /var/www/html/setup/src/Magento/Setup/Model/SearchConfig.php(69): Magento\Setup\Model\SearchConfig->validateSearchEngine()
+#1 /var/www/html/setup/src/Magento/Setup/Model/Installer.php(1261): Magento\Setup\Model\SearchConfig->saveConfiguration(Array)
+#2 [internal function]: Magento\Setup\Model\Installer->installSearchConfiguration(Array)
+#3 /var/www/html/setup/src/Magento/Setup/Model/Installer.php(422): call_user_func_array(Array, Array)
+#4 /var/www/html/setup/src/Magento/Setup/Console/Command/InstallCommand.php(239): Magento\Setup\Model\Installer->install(Array)
+#5 /var/www/html/vendor/symfony/console/Command/Command.php(341): Magento\Setup\Console\Command\InstallCommand->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#6 /var/www/html/vendor/symfony/console/Application.php(1094): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#7 /var/www/html/vendor/symfony/console/Application.php(356): Symfony\Component\Console\Application->doRunCommand(Object(Magento\Setup\Console\Command\InstallCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#8 /var/www/html/vendor/magento/framework/Console/Cli.php(137): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#9 /var/www/html/vendor/symfony/console/Application.php(195): Magento\Framework\Console\Cli->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#10 /var/www/html/bin/magento(23): Symfony\Component\Console\Application->run()
+#11 {main} [] []
+[2026-06-07T08:46:14.619550+00:00] main.INFO: Source table payment_services_order_status_data_production_submitted_hash does not exist. Skipping data migration... [] []
+[2026-06-07T08:46:33.355347+00:00] main.ERROR: Search engine 'elasticsearch7' is not an available search engine.
+#0 /var/www/html/setup/src/Magento/Setup/Model/SearchConfig.php(62): Magento\Setup\Model\SearchConfig->validateSearchEngineSelection(Array)
+#1 /var/www/html/setup/src/Magento/Setup/Model/Installer.php(1261): Magento\Setup\Model\SearchConfig->saveConfiguration(Array)
+#2 [internal function]: Magento\Setup\Model\Installer->installSearchConfiguration(Array)
+#3 /var/www/html/setup/src/Magento/Setup/Model/Installer.php(422): call_user_func_array(Array, Array)
+#4 /var/www/html/setup/src/Magento/Setup/Console/Command/InstallCommand.php(239): Magento\Setup\Model\Installer->install(Array)
+#5 /var/www/html/vendor/symfony/console/Command/Command.php(341): Magento\Setup\Console\Command\InstallCommand->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#6 /var/www/html/vendor/symfony/console/Application.php(1094): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#7 /var/www/html/vendor/symfony/console/Application.php(356): Symfony\Component\Console\Application->doRunCommand(Object(Magento\Setup\Console\Command\InstallCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#8 /var/www/html/vendor/magento/framework/Console/Cli.php(137): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#9 /var/www/html/vendor/symfony/console/Application.php(195): Magento\Framework\Console\Cli->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#10 /var/www/html/bin/magento(23): Symfony\Component\Console\Application->run()
+#11 {main} [] []
+[2026-06-07T08:50:02.814398+00:00] main.ERROR: There are no commands defined in the "config" namespace.
+
+Did you mean one of these?
+    app:config
+    module:config
+    setup:config
+    setup:store-config
+#0 /var/www/html/vendor/symfony/console/Application.php(743): Symfony\Component\Console\Application->findNamespace('config')
+#1 /var/www/html/vendor/symfony/console/Application.php(298): Symfony\Component\Console\Application->find('config:set')
+#2 /var/www/html/vendor/magento/framework/Console/Cli.php(137): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#3 /var/www/html/vendor/symfony/console/Application.php(195): Magento\Framework\Console\Cli->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#4 /var/www/html/bin/magento(23): Symfony\Component\Console\Application->run()
+#5 {main} [] []
+[2026-06-07T08:50:09.725046+00:00] main.ERROR: There are no commands defined in the "config" namespace.
+
+Did you mean one of these?
+    app:config
+    module:config
+    setup:config
+    setup:store-config
+#0 /var/www/html/vendor/symfony/console/Application.php(743): Symfony\Component\Console\Application->findNamespace('config')
+#1 /var/www/html/vendor/symfony/console/Application.php(298): Symfony\Component\Console\Application->find('config:set')
+#2 /var/www/html/vendor/magento/framework/Console/Cli.php(137): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#3 /var/www/html/vendor/symfony/console/Application.php(195): Magento\Framework\Console\Cli->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#4 /var/www/html/bin/magento(23): Symfony\Component\Console\Application->run()
+#5 {main} [] []
+[2026-06-07T08:50:16.592876+00:00] main.ERROR: There are no commands defined in the "config" namespace.
+
+Did you mean one of these?
+    app:config
+    module:config
+    setup:config
+    setup:store-config
+#0 /var/www/html/vendor/symfony/console/Application.php(743): Symfony\Component\Console\Application->findNamespace('config')
+#1 /var/www/html/vendor/symfony/console/Application.php(298): Symfony\Component\Console\Application->find('config:set')
+#2 /var/www/html/vendor/magento/framework/Console/Cli.php(137): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#3 /var/www/html/vendor/symfony/console/Application.php(195): Magento\Framework\Console\Cli->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#4 /var/www/html/bin/magento(23): Symfony\Component\Console\Application->run()
+#5 {main} [] []
+[2026-06-07T08:50:23.468459+00:00] main.ERROR: There are no commands defined in the "cache" namespace.
+#0 /var/www/html/vendor/symfony/console/Application.php(743): Symfony\Component\Console\Application->findNamespace('cache')
+#1 /var/www/html/vendor/symfony/console/Application.php(298): Symfony\Component\Console\Application->find('cache:clean')
+#2 /var/www/html/vendor/magento/framework/Console/Cli.php(137): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#3 /var/www/html/vendor/symfony/console/Application.php(195): Magento\Framework\Console\Cli->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#4 /var/www/html/bin/magento(23): Symfony\Component\Console\Application->run()
+#5 {main} [] []
+[2026-06-07T08:54:27.669913+00:00] main.ERROR: There are no commands defined in the "cache" namespace.
+#0 /var/www/html/vendor/symfony/console/Application.php(743): Symfony\Component\Console\Application->findNamespace('cache')
+#1 /var/www/html/vendor/symfony/console/Application.php(298): Symfony\Component\Console\Application->find('cache:flush')
+#2 /var/www/html/vendor/magento/framework/Console/Cli.php(137): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#3 /var/www/html/vendor/symfony/console/Application.php(195): Magento\Framework\Console\Cli->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#4 /var/www/html/bin/magento(23): Symfony\Component\Console\Application->run()
+#5 {main} [] []
+[2026-06-07T09:02:02.668040+00:00] main.INFO: Source table payment_services_order_status_data_production_submitted_hash does not exist. Skipping data migration... [] []
+[2026-06-07T09:02:21.552172+00:00] main.ERROR: Search engine 'elasticsearch7' is not an available search engine.
+#0 /var/www/html/setup/src/Magento/Setup/Model/SearchConfig.php(62): Magento\Setup\Model\SearchConfig->validateSearchEngineSelection(Array)
+#1 /var/www/html/setup/src/Magento/Setup/Model/Installer.php(1261): Magento\Setup\Model\SearchConfig->saveConfiguration(Array)
+#2 [internal function]: Magento\Setup\Model\Installer->installSearchConfiguration(Array)
+#3 /var/www/html/setup/src/Magento/Setup/Model/Installer.php(422): call_user_func_array(Array, Array)
+#4 /var/www/html/setup/src/Magento/Setup/Console/Command/InstallCommand.php(239): Magento\Setup\Model\Installer->install(Array)
+#5 /var/www/html/vendor/symfony/console/Command/Command.php(341): Magento\Setup\Console\Command\InstallCommand->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#6 /var/www/html/vendor/symfony/console/Application.php(1094): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#7 /var/www/html/vendor/symfony/console/Application.php(356): Symfony\Component\Console\Application->doRunCommand(Object(Magento\Setup\Console\Command\InstallCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#8 /var/www/html/vendor/magento/framework/Console/Cli.php(137): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#9 /var/www/html/vendor/symfony/console/Application.php(195): Magento\Framework\Console\Cli->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#10 /var/www/html/bin/magento(23): Symfony\Component\Console\Application->run()
+#11 {main} [] []
+[2026-06-07T09:20:37.149071+00:00] main.ERROR: SQLSTATE[HY000]: General error: 1419 You do not have the SUPER privilege and binary logging is enabled (you *might* want to use the less safe log_bin_trust_function_creators variable), query was: CREATE TRIGGER trg_catalog_product_entity_int_after_insert AFTER INSERT ON catalog_product_entity_int FOR EACH ROW
+BEGIN
+INSERT INTO `catalog_product_category_cl` (`entity_id`) VALUES (NEW.`entity_id`);
+INSERT INTO `catalog_product_attribute_cl` (`entity_id`) VALUES (NEW.`entity_id`);
+INSERT INTO `catalog_product_price_cl` (`entity_id`) VALUES (NEW.`entity_id`);
+INSERT INTO `catalogrule_product_cl` (`entity_id`) VALUES (NEW.`entity_id`);
+INSERT INTO `catalogsearch_fulltext_cl` (`entity_id`) VALUES (NEW.`entity_id`);
+END
+#0 /var/www/html/vendor/magento/framework/DB/Statement/Pdo/Mysql.php(89): Magento\Framework\DB\Statement\Pdo\Mysql->tryExecute(Object(Closure))
+#1 /var/www/html/vendor/magento/zend-db/library/Zend/Db/Statement.php(313): Magento\Framework\DB\Statement\Pdo\Mysql->_execute(Array)
+#2 /var/www/html/vendor/magento/zend-db/library/Zend/Db/Adapter/Abstract.php(480): Zend_Db_Statement->execute(Array)
+#3 /var/www/html/vendor/magento/zend-db/library/Zend/Db/Adapter/Pdo/Abstract.php(242): Zend_Db_Adapter_Abstract->query('CREATE TRIGGER ...', Array)
+#4 /var/www/html/vendor/magento/framework/DB/Adapter/Pdo/Mysql.php(692): Zend_Db_Adapter_Pdo_Abstract->query('CREATE TRIGGER ...', Array)
+#5 /var/www/html/vendor/magento/framework/DB/Adapter/Pdo/Mysql.php(718): Magento\Framework\DB\Adapter\Pdo\Mysql->Magento\Framework\DB\Adapter\Pdo\{closure}()
+#6 /var/www/html/vendor/magento/framework/DB/Adapter/Pdo/Mysql.php(692): Magento\Framework\DB\Adapter\Pdo\Mysql->performQuery(Object(Closure))
+#7 /var/www/html/vendor/magento/framework/DB/Adapter/Pdo/Mysql.php(804): Magento\Framework\DB\Adapter\Pdo\Mysql->_query('CREATE TRIGGER ...', Array)
+#8 /var/www/html/generated/code/Magento/Framework/DB/Adapter/Pdo/Mysql/Interceptor.php(104): Magento\Framework\DB\Adapter\Pdo\Mysql->multiQuery('CREATE TRIGGER ...', Array)
+#9 /var/www/html/vendor/magento/framework/DB/Adapter/Pdo/Mysql.php(4246): Magento\Framework\DB\Adapter\Pdo\Mysql\Interceptor->multiQuery('CREATE TRIGGER ...')
+#10 /var/www/html/generated/code/Magento/Framework/DB/Adapter/Pdo/Mysql/Interceptor.php(851): Magento\Framework\DB\Adapter\Pdo\Mysql->createTrigger(Object(Magento\Framework\DB\Ddl\Trigger))
+#11 /var/www/html/vendor/magento/framework/Mview/View/Subscription.php(222): Magento\Framework\DB\Adapter\Pdo\Mysql\Interceptor->createTrigger(Object(Magento\Framework\DB\Ddl\Trigger))
+#12 /var/www/html/vendor/magento/framework/Mview/View.php(229): Magento\Framework\Mview\View\Subscription->remove()
+#13 /var/www/html/generated/code/Magento/Framework/Mview/View/Interceptor.php(104): Magento\Framework\Mview\View->unsubscribe(false)
+#14 /var/www/html/vendor/magento/module-indexer/Setup/Recurring.php(141): Magento\Framework\Mview\View\Interceptor->unsubscribe(false)
+#15 /var/www/html/setup/src/Magento/Setup/Model/Installer.php(1171): Magento\Indexer\Setup\Recurring->install(Object(Magento\Setup\Module\Setup), Object(Magento\Setup\Model\ModuleContext))
+#16 /var/www/html/setup/src/Magento/Setup/Model/Installer.php(972): Magento\Setup\Model\Installer->handleDBSchemaData(Object(Magento\Setup\Module\Setup), 'schema', Array)
+#17 [internal function]: Magento\Setup\Model\Installer->installSchema(Array)
+#18 /var/www/html/setup/src/Magento/Setup/Model/Installer.php(422): call_user_func_array(Array, Array)
+#19 /var/www/html/setup/src/Magento/Setup/Console/Command/InstallCommand.php(239): Magento\Setup\Model\Installer->install(Array)
+#20 /var/www/html/vendor/symfony/console/Command/Command.php(341): Magento\Setup\Console\Command\InstallCommand->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#21 /var/www/html/vendor/symfony/console/Application.php(1094): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#22 /var/www/html/vendor/symfony/console/Application.php(356): Symfony\Component\Console\Application->doRunCommand(Object(Magento\Setup\Console\Command\InstallCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#23 /var/www/html/vendor/magento/framework/Console/Cli.php(137): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#24 /var/www/html/vendor/symfony/console/Application.php(195): Magento\Framework\Console\Cli->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#25 /var/www/html/bin/magento(23): Symfony\Component\Console\Application->run()
+#26 {main} [] []
+[2026-06-07T09:23:49.879646+00:00] main.INFO: Source table payment_services_order_status_data_production_submitted_hash does not exist. Skipping data migration... [] []
+[2026-06-07T09:24:09.108567+00:00] main.ERROR: Search engine 'elasticsearch7' is not an available search engine.
+#0 /var/www/html/setup/src/Magento/Setup/Model/SearchConfig.php(62): Magento\Setup\Model\SearchConfig->validateSearchEngineSelection(Array)
+#1 /var/www/html/setup/src/Magento/Setup/Model/Installer.php(1261): Magento\Setup\Model\SearchConfig->saveConfiguration(Array)
+#2 [internal function]: Magento\Setup\Model\Installer->installSearchConfiguration(Array)
+#3 /var/www/html/setup/src/Magento/Setup/Model/Installer.php(422): call_user_func_array(Array, Array)
+#4 /var/www/html/setup/src/Magento/Setup/Console/Command/InstallCommand.php(239): Magento\Setup\Model\Installer->install(Array)
+#5 /var/www/html/vendor/symfony/console/Command/Command.php(341): Magento\Setup\Console\Command\InstallCommand->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#6 /var/www/html/vendor/symfony/console/Application.php(1094): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#7 /var/www/html/vendor/symfony/console/Application.php(356): Symfony\Component\Console\Application->doRunCommand(Object(Magento\Setup\Console\Command\InstallCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#8 /var/www/html/vendor/magento/framework/Console/Cli.php(137): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#9 /var/www/html/vendor/symfony/console/Application.php(195): Magento\Framework\Console\Cli->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#10 /var/www/html/bin/magento(23): Symfony\Component\Console\Application->run()
+#11 {main} [] []
+[2026-06-07T09:27:09.888848+00:00] main.INFO: Source table payment_services_order_status_data_production_submitted_hash does not exist. Skipping data migration... [] []
+[2026-06-07T10:43:33.704078+00:00] main.WARNING: 515b69d8be69|71: Did not write session for ID 483489b84ca41e996d8c7cf658357a6e: another process took the lock. /static/frontend/Magento/luma/en_US/mage/calendar.css [] []
+[2026-06-07T10:43:48.432017+00:00] main.WARNING: 515b69d8be69|72: Did not write session for ID 483489b84ca41e996d8c7cf658357a6e: another process took the lock. /static/frontend/Magento/luma/en_US/css/styles-l.css [] []
+[2026-06-07T10:44:21.279699+00:00] main.WARNING: 515b69d8be69|50: Did not write session for ID 483489b84ca41e996d8c7cf658357a6e: another process took the lock. /static/frontend/Magento/luma/en_US/css/styles-m.css [] []
+[2026-06-07T10:44:33.215562+00:00] main.WARNING: 515b69d8be69|73: Did not write session for ID 483489b84ca41e996d8c7cf658357a6e: another process took the lock. /static/frontend/Magento/luma/en_US/jquery/uppy/dist/uppy-custom.css [] []
+[2026-06-07T10:44:58.916033+00:00] main.ERROR: SQLSTATE[HY000] [2002] Connection refused [] []
+[2026-06-07T10:44:58.916729+00:00] main.ERROR: SQLSTATE[HY000] [2002] Connection refused [] []
+[2026-06-07T10:44:58.916629+00:00] main.ERROR: SQLSTATE[HY000] [2002] Connection refused [] []
+[2026-06-07T10:44:58.917031+00:00] main.ERROR: SQLSTATE[HY000] [2002] Connection refused [] []
+[2026-06-07T10:44:58.917166+00:00] main.ERROR: SQLSTATE[HY000] [2002] Connection refused [] []
+[2026-06-07T10:44:59.757965+00:00] main.ERROR: SQLSTATE[HY000] [2002] Connection refused [] []
+[2026-06-07T10:44:59.757965+00:00] main.ERROR: SQLSTATE[HY000] [2002] Connection refused [] []
+[2026-06-07T10:44:59.758944+00:00] main.ERROR: SQLSTATE[HY000] [2002] Connection refused [] []
+[2026-06-07T10:44:59.758997+00:00] main.ERROR: SQLSTATE[HY000] [2002] Connection refused [] []
+[2026-06-07T10:44:59.768769+00:00] main.ERROR: SQLSTATE[HY000] [2002] Connection refused [] []
+[2026-06-07T10:44:59.818471+00:00] main.ERROR: SQLSTATE[HY000] [2002] Connection refused [] []
+[2026-06-07T10:44:59.823590+00:00] main.ERROR: SQLSTATE[HY000] [2002] Connection refused [] []
+[2026-06-07T10:44:59.828686+00:00] main.ERROR: SQLSTATE[HY000] [2002] Connection refused [] []
+[2026-06-07T10:44:59.827735+00:00] main.ERROR: SQLSTATE[HY000] [2002] Connection refused [] []
+[2026-06-07T10:44:59.832083+00:00] main.ERROR: SQLSTATE[HY000] [2002] Connection refused [] []
+[2026-06-07T10:44:59.856208+00:00] main.ERROR: SQLSTATE[HY000] [2002] Connection refused [] []
+[2026-06-07T10:44:59.866492+00:00] main.ERROR: SQLSTATE[HY000] [2002] Connection refused [] []
+[2026-06-07T10:44:59.868748+00:00] main.ERROR: SQLSTATE[HY000] [2002] Connection refused [] []
+[2026-06-07T17:11:49.207414+00:00] main.ERROR: Transport error while sending email: Unable to write bytes on the wire. [] []
+[2026-06-07T17:13:29.279410+00:00] main.CRITICAL: The specified "/var/www/html/generated/code/Magento/Framework/App/Http/Interceptor.php.10" file couldn't be written. Warning!file_put_contents(/var/www/html/generated/code/Magento/Framework/App/Http/Interceptor.php.10): Failed to open stream: Permission denied
+Class Magento\Framework\App\Http\Interceptor generation error: The requested class did not generate properly, because the 'generated' directory permission is read-only. If --- after running the 'bin/magento setup:di:compile' CLI command when the 'generated' directory permission is set to write --- the requested class did not generate properly, then you must add the generated class object to the signature of the related construct method, only. [] []
+[2026-06-07T17:13:30.685794+00:00] main.CRITICAL: The specified "/var/www/html/generated/code/Magento/Framework/App/Http/Interceptor.php.8" file couldn't be written. Warning!file_put_contents(/var/www/html/generated/code/Magento/Framework/App/Http/Interceptor.php.8): Failed to open stream: Permission denied
+Class Magento\Framework\App\Http\Interceptor generation error: The requested class did not generate properly, because the 'generated' directory permission is read-only. If --- after running the 'bin/magento setup:di:compile' CLI command when the 'generated' directory permission is set to write --- the requested class did not generate properly, then you must add the generated class object to the signature of the related construct method, only. [] []
+[2026-06-07T17:13:32.179989+00:00] main.CRITICAL: The specified "/var/www/html/generated/code/Magento/Framework/App/Http/Interceptor.php.9" file couldn't be written. Warning!file_put_contents(/var/www/html/generated/code/Magento/Framework/App/Http/Interceptor.php.9): Failed to open stream: Permission denied
+Class Magento\Framework\App\Http\Interceptor generation error: The requested class did not generate properly, because the 'generated' directory permission is read-only. If --- after running the 'bin/magento setup:di:compile' CLI command when the 'generated' directory permission is set to write --- the requested class did not generate properly, then you must add the generated class object to the signature of the related construct method, only. [] []
+[2026-06-07T17:13:32.240922+00:00] main.CRITICAL: The specified "/var/www/html/generated/code/Magento/Framework/App/Http/Interceptor.php.10" file couldn't be written. Warning!file_put_contents(/var/www/html/generated/code/Magento/Framework/App/Http/Interceptor.php.10): Failed to open stream: Permission denied
+Class Magento\Framework\App\Http\Interceptor generation error: The requested class did not generate properly, because the 'generated' directory permission is read-only. If --- after running the 'bin/magento setup:di:compile' CLI command when the 'generated' directory permission is set to write --- the requested class did not generate properly, then you must add the generated class object to the signature of the related construct method, only. [] []
+[2026-06-07T17:13:35.164512+00:00] main.CRITICAL: The specified "/var/www/html/generated/code/Magento/Framework/App/Http/Interceptor.php.8" file couldn't be written. Warning!file_put_contents(/var/www/html/generated/code/Magento/Framework/App/Http/Interceptor.php.8): Failed to open stream: Permission denied
+Class Magento\Framework\App\Http\Interceptor generation error: The requested class did not generate properly, because the 'generated' directory permission is read-only. If --- after running the 'bin/magento setup:di:compile' CLI command when the 'generated' directory permission is set to write --- the requested class did not generate properly, then you must add the generated class object to the signature of the related construct method, only. [] []
+[2026-06-07T17:13:35.217610+00:00] main.CRITICAL: The specified "/var/www/html/generated/code/Magento/Framework/App/Http/Interceptor.php.9" file couldn't be written. Warning!file_put_contents(/var/www/html/generated/code/Magento/Framework/App/Http/Interceptor.php.9): Failed to open stream: Permission denied
+Class Magento\Framework\App\Http\Interceptor generation error: The requested class did not generate properly, because the 'generated' directory permission is read-only. If --- after running the 'bin/magento setup:di:compile' CLI command when the 'generated' directory permission is set to write --- the requested class did not generate properly, then you must add the generated class object to the signature of the related construct method, only. [] []
+[2026-06-07T17:13:44.773680+00:00] main.CRITICAL: The specified "/var/www/html/generated/code/Magento/Framework/App/Http/Interceptor.php.10" file couldn't be written. Warning!file_put_contents(/var/www/html/generated/code/Magento/Framework/App/Http/Interceptor.php.10): Failed to open stream: Permission denied
+Class Magento\Framework\App\Http\Interceptor generation error: The requested class did not generate properly, because the 'generated' directory permission is read-only. If --- after running the 'bin/magento setup:di:compile' CLI command when the 'generated' directory permission is set to write --- the requested class did not generate properly, then you must add the generated class object to the signature of the related construct method, only. [] []
+[2026-06-07T17:13:44.830845+00:00] main.CRITICAL: The specified "/var/www/html/generated/code/Magento/Framework/App/Http/Interceptor.php.8" file couldn't be written. Warning!file_put_contents(/var/www/html/generated/code/Magento/Framework/App/Http/Interceptor.php.8): Failed to open stream: Permission denied
+Class Magento\Framework\App\Http\Interceptor generation error: The requested class did not generate properly, because the 'generated' directory permission is read-only. If --- after running the 'bin/magento setup:di:compile' CLI command when the 'generated' directory permission is set to write --- the requested class did not generate properly, then you must add the generated class object to the signature of the related construct method, only. [] []
+[2026-06-07T17:13:48.745325+00:00] main.CRITICAL: The specified "/var/www/html/generated/code/Magento/Framework/App/Http/Interceptor.php.9" file couldn't be written. Warning!file_put_contents(/var/www/html/generated/code/Magento/Framework/App/Http/Interceptor.php.9): Failed to open stream: Permission denied
+Class Magento\Framework\App\Http\Interceptor generation error: The requested class did not generate properly, because the 'generated' directory permission is read-only. If --- after running the 'bin/magento setup:di:compile' CLI command when the 'generated' directory permission is set to write --- the requested class did not generate properly, then you must add the generated class object to the signature of the related construct method, only. [] []
+[2026-06-07T17:13:48.804851+00:00] main.CRITICAL: The specified "/var/www/html/generated/code/Magento/Framework/App/Http/Interceptor.php.10" file couldn't be written. Warning!file_put_contents(/var/www/html/generated/code/Magento/Framework/App/Http/Interceptor.php.10): Failed to open stream: Permission denied
+Class Magento\Framework\App\Http\Interceptor generation error: The requested class did not generate properly, because the 'generated' directory permission is read-only. If --- after running the 'bin/magento setup:di:compile' CLI command when the 'generated' directory permission is set to write --- the requested class did not generate properly, then you must add the generated class object to the signature of the related construct method, only. [] []
+[2026-06-07T17:13:51.395626+00:00] main.CRITICAL: The specified "/var/www/html/generated/code/Magento/Framework/App/Http/Interceptor.php.8" file couldn't be written. Warning!file_put_contents(/var/www/html/generated/code/Magento/Framework/App/Http/Interceptor.php.8): Failed to open stream: Permission denied
+Class Magento\Framework\App\Http\Interceptor generation error: The requested class did not generate properly, because the 'generated' directory permission is read-only. If --- after running the 'bin/magento setup:di:compile' CLI command when the 'generated' directory permission is set to write --- the requested class did not generate properly, then you must add the generated class object to the signature of the related construct method, only. [] []
+[2026-06-07T17:13:51.456317+00:00] main.CRITICAL: The specified "/var/www/html/generated/code/Magento/Framework/App/Http/Interceptor.php.9" file couldn't be written. Warning!file_put_contents(/var/www/html/generated/code/Magento/Framework/App/Http/Interceptor.php.9): Failed to open stream: Permission denied
+Class Magento\Framework\App\Http\Interceptor generation error: The requested class did not generate properly, because the 'generated' directory permission is read-only. If --- after running the 'bin/magento setup:di:compile' CLI command when the 'generated' directory permission is set to write --- the requested class did not generate properly, then you must add the generated class object to the signature of the related construct method, only. [] []
+[2026-06-07T17:13:53.757830+00:00] main.CRITICAL: The specified "/var/www/html/generated/code/Magento/Framework/App/Http/Interceptor.php.10" file couldn't be written. Warning!file_put_contents(/var/www/html/generated/code/Magento/Framework/App/Http/Interceptor.php.10): Failed to open stream: Permission denied
+Class Magento\Framework\App\Http\Interceptor generation error: The requested class did not generate properly, because the 'generated' directory permission is read-only. If --- after running the 'bin/magento setup:di:compile' CLI command when the 'generated' directory permission is set to write --- the requested class did not generate properly, then you must add the generated class object to the signature of the related construct method, only. [] []
+[2026-06-07T17:13:53.819274+00:00] main.CRITICAL: The specified "/var/www/html/generated/code/Magento/Framework/App/Http/Interceptor.php.8" file couldn't be written. Warning!file_put_contents(/var/www/html/generated/code/Magento/Framework/App/Http/Interceptor.php.8): Failed to open stream: Permission denied
+Class Magento\Framework\App\Http\Interceptor generation error: The requested class did not generate properly, because the 'generated' directory permission is read-only. If --- after running the 'bin/magento setup:di:compile' CLI command when the 'generated' directory permission is set to write --- the requested class did not generate properly, then you must add the generated class object to the signature of the related construct method, only. [] []

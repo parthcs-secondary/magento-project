@@ -1,0 +1,119 @@
+services:
+  nginx:
+    image: nginx:1.25-alpine
+    container_name: magento_nginx
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./nginx/default.conf:/etc/nginx/conf.d/default.conf:ro
+      - ./certs:/etc/nginx/certs:ro
+      - ./src:/var/www/html
+    restart: unless-stopped
+    deploy:
+      resources:
+        limits:
+          cpus: '0.25'
+          memory: 50M
+    networks:
+      - magento_net
+
+
+  varnish:
+    image: varnish:7.4
+    container_name: magento_varnish
+    # No exposed ports; Nginx proxies to it internally
+    volumes:
+      - ./varnish/default.vcl:/etc/varnish/default.vcl:ro
+    restart: unless-stopped
+    deploy:
+      resources:
+        limits:
+          cpus: '0.50'
+          memory: 100M
+    networks:
+      - magento_net
+  redis:
+    image: redis:8.0-M02-alpine
+    container_name: magento_redis
+    # Command configures Redis to evict old cache keys to prevent OOM
+    command: redis-server --maxmemory 100mb --maxmemory-policy allkeys-lru
+    restart: unless-stopped
+    deploy:
+      resources:
+        limits:
+          cpus: '0.25'
+          memory: 120M
+    networks:
+      - magento_net
+  mysql:
+    image: mysql:8.0
+    container_name: magento_mysql
+    command: --innodb-buffer-pool-size=64M --max-connections=50
+    environment:
+      MYSQL_ROOT_PASSWORD: rootpassword123
+      MYSQL_DATABASE: magento
+      MYSQL_USER: magento_user
+      MYSQL_PASSWORD: magentopassword123
+    volumes:
+      - ./mysql:/var/lib/mysql
+    restart: unless-stopped
+    deploy:
+      resources:
+        limits:
+          cpus: '0.50'
+          memory: 250M
+    networks:
+      - magento_net
+
+  phpmyadmin:
+    image: phpmyadmin:latest
+    container_name: magento_pma
+    environment:
+      PMA_HOST: mysql
+      PMA_USER: root
+      PMA_PASSWORD: rootpassword123
+    ports:
+      - "8081:80"
+    restart: unless-stopped
+    deploy:
+      resources:
+        limits:
+          cpus: '0.25'
+          memory: 64M
+    networks:
+      - magento_net
+
+  elasticsearch:
+    image: elasticsearch:7.17.10
+    container_name: magento_elasticsearch
+    environment:
+      - discovery.type=single-node
+      - ES_JAVA_OPTS=-Xms256m -Xmx256m
+      - xpack.security.enabled=false
+    volumes:
+      - ./elasticsearch:/usr/share/elasticsearch/data
+    restart: unless-stopped
+    deploy:
+      resources:
+        limits:
+          cpus: '0.50'
+          memory: 400M
+    networks:
+      - magento_net
+
+  php:
+    build: ./php
+    container_name: magento_php
+    restart: unless-stopped
+    volumes:
+      - ./src:/var/www/html
+    deploy:
+      resources:
+        limits:
+          memory: 750M
+    networks:
+      - magento_net
+networks:
+  magento_net:
+    driver: bridge
